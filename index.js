@@ -2,54 +2,66 @@ import inquirer from "inquirer";
 import fs from "fs";
 
 inquirer
-.prompt([
-    { type: 'input',
-        name: 'title',
-        message: 'What is your Project Title',
-    },
-    { type: 'input',
-        name: 'description',
-        message: 'Enter the description?',
-    },
-    { type: 'input',
-        name: 'installation',
-        message: 'Enter the installation instructions?',
-    },
-    { type: 'input',
-        name: 'usage',
-        message: 'Enter the usage information?',
-    },
-    { type: 'input',
-        name: 'contribution ',
-        message: 'Enter the contribution guidelines?',
-    },
-    { type: 'input',
-        name: 'test',
-        message: 'Enter the test instructions?',
-    },
-    {type: 'list',
-        name: 'licences',
-        choices: ['option1', 'option2', 'option3', 'option4'],
-    },
-    {type: 'input',
-        name: 'userName',
-        message: 'Please enter GitHub username?',
-    },
-    {type: 'input',
-        name: 'email',
-        message: 'Enter Email?',
-    }
+    .prompt([
+        {
+            type: 'input',
+            name: 'title',
+            message: 'What is your Project Title',
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Enter the description?',
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Enter the installation instructions?',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Enter the usage information?',
+        },
+        {
+            type: 'input',
+            name: 'contribution ',
+            message: 'Enter the contribution guidelines?',
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'Enter the test instructions?',
+        },
+        {
+            type: 'list',
+            name: 'licences',
+            choices: ['option1', 'option2', 'option3', 'option4'],
+        },
+        {
+            type: 'input',
+            name: 'userName',
+            message: 'Please enter GitHub username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter Email?',
+        }
 
-])
-.then ((ressponse) =>{
-    const redmeFile = `
-    #${ressponse.title}
-    ${ressponse.licences}
+    ])
+    .then((ressponse) => {
+        const redmeFile = `
+## ${ressponse.title}
+    
+## Licence
+${ressponse.licences}
 
-    ##Description
-    ${ressponse.description}
+## Description
+${ressponse.description}
 
-    ##Table of Contents
+# Table of Contents
+    
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -57,38 +69,44 @@ inquirer
 - [Tests](#tests)
 - [Questions](#questions)
 
-##Installation
+# Installation
+
 ${ressponse.installation}
 
-##Usage
+## Usage
+
 ${ressponse.usage}
 
-##License
+## License
+
 ${ressponse.licences}
 
-##Contributing
+## Contributing
+
 ${ressponse.contribution}
 
-##Test
+## Test
+
 ${ressponse.test}
 
-##Questions
+## Questions
+
 For questions or additional information, please reach out:
 - GitHub: [${ressponse.github}](https://github.com/${ressponse.github})
 - Email: [${ressponse.email}](mailto:${ressponse.email})
 
  `;
-fs.writeFile('README.md', redmeFile, (err) => {
-    if (err) {
-        console.log('Error wriing to file:', err);
-        
-    }else{
-        console.log('README file has successfully generated README.md');
-        
-    }
-})
+        fs.writeFile('README.md', redmeFile, (err) => {
+            if (err) {
+                console.log('Error wriing to file:', err);
 
-})
+            } else {
+                console.log('README file has successfully generated README.md');
+
+            }
+        })
+
+    })
 
 
 
