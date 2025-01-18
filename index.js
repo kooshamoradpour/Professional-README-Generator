@@ -36,7 +36,7 @@ inquirer
         {
             type: 'list',
             name: 'licences',
-            choices: ['option1', 'option2', 'option3', 'option4'],
+            choices: ['MIT', 'Microsoft Public', 'Boost Software', 'Mozilla Public'],
         },
         {
             type: 'input',
@@ -109,21 +109,20 @@ For questions or additional information, please reach out:
     })
 
 
+    
+
+    // Answer of the question:
 
 
+ // Brain Cancer Detection and Tracking with AI
 
+// Description
+// This project leverages machine learning and genetic data analysis to develop a system that identifies, tracks, and suggests potential treatments for brain cancer. By integrating biotechnology and advanced coding techniques, the tool aims to assist researchers and healthcare professionals in finding personalized and effective solutions.
 
+// Clone the repository, Install the dependencies
 
+// Launch the app and upload genetic data or imaging scans. Use the dashboard to analyze results, visualize patterns, and export reports. For research use, explore the source code to adapt the models for specific datasets.
 
+// Fork the repository and create a new branch for your feature: 1-git checkout -b feature-name. 2-Submit a pull request detailing the changes and testing process. 3-Ensure code follows project coding standards and includes comments.
 
-
-
-// What was your motivation?
-// Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-// What problem does it solve?
-// What did you learn?
-// What makes your project stand out?
-
-// # A first-level heading
-// ## A second-level heading
-// ### A third-level heading
+// Use sample datasets provided in the data/test_samples directory for functionality testing.  Report any issues with testing by submitting them to the issue tracker.
