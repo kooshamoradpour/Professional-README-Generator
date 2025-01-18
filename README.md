@@ -1,5 +1,5 @@
 
-## Brain Cancer Detection and Tracking with AI
+##  Brain Cancer Detection and Tracking with AI
     
 ## Licence
 MIT
@@ -15,14 +15,15 @@ This project leverages machine learning and genetic data analysis to develop a s
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [link](#Videolink)
 
 # Installation
 
- Clone the repository, Install the dependencies
+Clone the repository, Install the dependencies
 
 ## Usage
 
- Launch the app and upload genetic data or imaging scans. Use the dashboard to analyze results, visualize patterns, and export reports. For research use, explore the source code to adapt the models for specific datasets.
+Launch the app and upload genetic data or imaging scans. Use the dashboard to analyze results, visualize patterns, and export reports. For research use, explore the source code to adapt the models for specific datasets.
 
 ## License
 
@@ -42,4 +43,7 @@ For questions or additional information, please reach out:
 - GitHub: [undefined](https://github.com/undefined)
 - Email: [sample@gmail.com](mailto:sample@gmail.com)
 
- 
+
+## videolink:
+ file:///Users/kooshamoradpour/Downloads/Untitled%20Video%20January%2018,%202025%202_55%20PM.webm
+
